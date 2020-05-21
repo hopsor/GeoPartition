@@ -29,10 +29,10 @@ defmodule GeoPartition.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poison, "~> 3.1"},
+      {:poison, "~> 4.0.1", override: true},
       {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
-      {:geo, "~> 3.0"},
+      {:geo, github: "bryanjos/geo"},
       {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
       {:ex_simple_graph, "~> 0.1.3"},
       {:vector, "~> 1.0"},
